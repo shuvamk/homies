@@ -7,12 +7,11 @@ const styles = StyleSheet.create({
   avatarList: {
     flexDirection: 'row',
     justifyContent: 'space-around',
-    backgroundColor: 'red',
-    width: '100%',
-    paddingVertical: 16,
+    minWidth: '100%',
+    paddingVertical: 4,
   },
   heading: {
-    fontSize: 20,
+    fontSize: 28,
     fontWeight: '700',
   },
 });

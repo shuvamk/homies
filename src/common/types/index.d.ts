@@ -5,3 +5,9 @@ export type Homie = {
   name: string;
   avatar: ImageSourcePropType;
 };
+
+export type Announcement = {
+  id: string | number;
+  announcement: string;
+  madeBy: string;
+};

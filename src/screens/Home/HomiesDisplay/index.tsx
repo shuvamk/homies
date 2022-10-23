@@ -36,6 +36,7 @@ const HomiesDisplay = () => {
         data={HOMIES}
         renderItem={homie => <Avatar homie={homie.item} />}
         contentContainerStyle={styles.avatarList}
+        showsHorizontalScrollIndicator={false}
       />
     </View>
   );
