@@ -2,9 +2,10 @@ import {Image, Text, View} from 'react-native';
 import React from 'react';
 import Button from '../../../components/Button';
 import styles from './quickActions.style';
-import Lottie from 'lottie-react-native';
 
-const QuickActions = () => {
+const QuickActions = (props: any) => {
+  const {navigation} = props;
+
   return (
     <View style={styles.wrapper}>
       <Text style={styles.heading}>Quick Actions</Text>
@@ -13,7 +14,7 @@ const QuickActions = () => {
           <Button
             type="primary"
             btnText="Shopping List"
-            onPress={() => console.log('EXPENSE BUTTON')}
+            onPress={() => navigation.navigate('Shopping')}
             topNode={
               <Image
                 style={styles.icon}
@@ -26,7 +27,7 @@ const QuickActions = () => {
           <Button
             type="primary"
             btnText="Split Expense"
-            onPress={() => console.log('EXPENSE BUTTON')}
+            onPress={() => navigation.navigate('Expenses')}
             topNode={
               <Image
                 style={styles.icon}
@@ -39,7 +40,7 @@ const QuickActions = () => {
           <Button
             type="primary"
             btnText="Add Task"
-            onPress={() => console.log('Add Task Button')}
+            onPress={() => navigation.navigate('Tasks')}
             topNode={
               <Image
                 style={styles.icon}

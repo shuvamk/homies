@@ -5,11 +5,11 @@ import Announcements from './Announcements';
 import HomiesDisplay from './HomiesDisplay';
 import QuickActions from './QuickActions';
 
-const Home = () => {
+const Home = ({navigation}: {navigation: any}) => {
   return (
     <ScreenWrapper>
       <HomiesDisplay />
-      <QuickActions />
+      <QuickActions navigation={navigation} />
       <Announcements />
     </ScreenWrapper>
   );
